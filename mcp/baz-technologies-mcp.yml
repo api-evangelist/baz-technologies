@@ -1,0 +1,30 @@
+generated: '2026-07-18'
+method: searched
+status: published
+source: https://baz.ai/docs/capabilities/model-context-protocol
+server:
+  name: baz
+  transport: http
+  url: https://baz.ai/mcp
+description: >-
+  Baz exposes a hosted, remote MCP server that delivers context-aware, org-configured
+  code reviews directly inside any MCP-enabled IDE, CLI, or agent (Cursor, Claude Code /
+  Desktop, VS Code). Review principles, coding standards, and conventions are managed
+  centrally at baz.co and enforced through the MCP surface.
+auth:
+  scheme: oauth
+  notes: >-
+    Interactive OAuth on first connect; credentials cached locally under ~/.mcp-auth
+    (clear this directory to reset the connection). No static API key documented.
+client_config_example:
+  mcp:
+    servers:
+      baz:
+        type: http
+        url: https://baz.ai/mcp
+tools:
+  note: >-
+    The public docs advertise the MCP server and its configuration but do not enumerate
+    individual tool names/signatures; tools are exposed dynamically ("Baz's tool
+    signature — parameters, description, etc."). No verbatim tool list was published to
+    capture, so none are asserted here (no fabrication).

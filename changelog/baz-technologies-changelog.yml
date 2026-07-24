@@ -1,0 +1,39 @@
+generated: '2026-07-18'
+method: searched
+source: https://baz.ai/changelog
+scheme: date-based
+current_version: null
+notes: >-
+  Baz publishes a dated product changelog (not semantic versions), organized by month.
+  Recent window captured below verbatim from the public changelog.
+entries:
+- date: '2026-07-07'
+  title: Merger Agent Stats
+  highlight: Dashboard tracking merge-agent performance metrics and outcomes.
+- date: '2026-07-06'
+  title: PR Inbox
+  highlight: Centralized developer view for review requests and owned changes.
+- date: '2026-07-03'
+  title: Better budget controls for usage-based pricing
+  highlight: Spend limits and usage transparency for the usage-based (Engineering Work Credits) model.
+- date: '2026-07-01'
+  title: Plan review approvals
+  highlight: Dedicated workflow for reviewing AI-generated implementation plans.
+- date: '2026-06-30'
+  title: Sessions support for Merger, Spec Reviewer, Planner, and full codebase scans
+  highlight: Session tracking expanded across multiple agent types and security scans.
+- date: '2026-06-29'
+  title: Full codebase scan for Advanced Security
+  highlight: Repository-wide security analysis beyond pull-request changes.
+- date: '2026-06-29'
+  title: Planner
+  highlight: AI-driven implementation planning that routes ideas through detect/root-cause/patch/validate loops.
+- date: '2026-06-15'
+  title: Azure DevOps repository selection
+  highlight: Repository selection for Azure DevOps organizations.
+- date: '2026-06-11'
+  title: 'New in Engineering Impact: Pick up time and Time to merge'
+  highlight: Added pickup-time and time-to-merge metrics to Engineering Impact.
+- date: '2026-06-10'
+  title: Merger
+  highlight: Autonomous merge-decision agent that clears stale PR queues where safe.

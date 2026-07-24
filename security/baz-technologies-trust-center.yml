@@ -1,0 +1,20 @@
+generated: '2026-07-18'
+method: searched
+source: https://baz.ai/docs/account/security-privacy-and-compliance
+url: https://trust.baz.ai
+certifications:
+- SOC 2
+description: >-
+  Baz publicly states it is SOC 2 certified (footer: "© 2026 Baz Technologies, Inc.
+  SOC 2 Certified") and links a trust portal at trust.baz.ai. Infrastructure runs on
+  AWS with Kubernetes, managed via Terraform (infrastructure-as-code); development and
+  production environments are isolated. Managed AI services (including OpenAI) are used
+  as subprocessors.
+evidence:
+- source: https://baz.ai/docs/account/security-privacy-and-compliance
+  keywords: [soc 2 certified, aws, environment isolation, terraform]
+notes: >-
+  Only SOC 2 is named in the public security/compliance documentation; no ISO 27001,
+  PCI DSS, HIPAA, FedRAMP, or GDPR/CCPA certification is asserted (none published). The
+  trust.baz.ai subdomain is linked from the site footer but did not resolve from this
+  probe environment.

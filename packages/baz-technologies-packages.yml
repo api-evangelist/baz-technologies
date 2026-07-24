@@ -1,0 +1,19 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.npmjs.com/package/@baz-scm/cli
+packages:
+- language: javascript
+  registry: npm
+  name: "@baz-scm/cli"
+  version: 0.3.17
+  description: Baz CLI tool for managing pull requests and running AI-assisted manual code review.
+  url: https://www.npmjs.com/package/@baz-scm/cli
+  repository: https://github.com/baz-scm/baz-cli
+  install: npm install -g @baz-scm/cli
+  official: true
+  kind: cli
+notes: >-
+  Baz distributes its developer tooling as a CLI (@baz-scm/cli) and a coding-agent
+  plugin (github.com/baz-scm/baz-plugin) rather than language client SDKs. No first-party
+  REST client libraries were found on PyPI, Maven Central, NuGet, RubyGems, pkg.go.dev,
+  Packagist, or crates.io; the primary programmatic surface is the hosted MCP server.

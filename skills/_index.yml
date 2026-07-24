@@ -1,0 +1,26 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/baz-scm
+description: >-
+  Baz publishes agent-facing operating instructions rather than an OpenAPI-grounded
+  action API. Two provider-published surfaces are captured verbatim as references: the
+  awesome-reviewers library of ready-to-use system prompts for agentic code review, and
+  the baz-plugin that installs Baz into a coding agent. No REST OpenAPI exists in this
+  repo to ground generated per-operation skills, so none are synthesized (no fabrication).
+skills:
+- name: Baz Awesome Reviewers
+  file: null
+  source: https://github.com/baz-scm/awesome-reviewers
+  site: https://awesomereviewers.com/
+  description: Ready-to-use system prompts (skills) for agentic code review, published by Baz.
+  kind: published-agent-skills
+- name: Baz Plugin
+  file: null
+  source: https://github.com/baz-scm/baz-plugin
+  description: Installs Baz to make a coding agent faster, cheaper, and more precise.
+  kind: published-agent-plugin
+- name: Baz Skills & Instructions (docs)
+  file: null
+  source: https://baz.ai/docs/agents/skills-and-instructions
+  description: How to configure customized agents with skills and instructions in Baz.
+  kind: docs

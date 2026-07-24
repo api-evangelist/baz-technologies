@@ -1,8 +1,16 @@
 aid: baz-technologies
 name: Baz Technologies
-description: Baz Technologies is a company surfaced as a portfolio company of battery-ventures and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Baz Technologies (Baz) is a Tel Aviv-based engineering review platform that uses
+  purpose-built AI agents — code review, spec review, advanced security, SRE, and an
+  automated fixer — to review implementation plans, pull requests, security findings,
+  and merge decisions across the whole software development lifecycle. Baz reads the
+  entire codebase alongside production telemetry to catch bugs and vulnerabilities
+  before they ship, integrating with GitHub, GitLab, and Azure DevOps and issue/observability
+  tools (Jira, Linear, Datadog, Sentry). It exposes its context-aware reviews to
+  AI-native IDEs and CLIs (Cursor, Claude, VS Code) through a hosted Model Context
+  Protocol (MCP) server, an npm-distributed CLI, and a coding-agent plugin. Backed by
+  Battery Ventures and boldstart ventures with $17M in seed funding.
 url: https://raw.githubusercontent.com/api-evangelist/baz-technologies/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,14 +18,86 @@ x-backed-by:
 - battery-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://baz.ai/seo.jpg
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Code Review
+- Developer Tools
+- AI Agents
+- Application Security
+- Agentic Coding
+- DevOps
+- Model Context Protocol
+- Software Engineering
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/baz-technologies-domain-security.yml
+- type: Website
+  url: https://baz.ai
+- type: DeveloperPortal
+  url: https://baz.ai/docs
+- type: Documentation
+  url: https://baz.ai/docs
+- type: GettingStarted
+  url: https://baz.ai/docs/basics/getting-started
+- type: Blog
+  url: https://baz.ai/resources/blog
+- type: GitHubOrganization
+  url: https://github.com/baz-scm
+- type: Pricing
+  url: https://baz.ai/pricing
+- type: SignUp
+  url: https://baz.co/login
+- type: TermsOfService
+  url: https://baz.ai/terms
+- type: PrivacyPolicy
+  url: https://baz.ai/privacy
+- type: Support
+  url: https://baz.ai/contact
+- type: ChangeLog
+  url: https://baz.ai/changelog
+- type: ChangeLog
+  url: changelog/baz-technologies-changelog.yml
+- type: MCPServer
+  url: mcp/baz-technologies-mcp.yml
+- type: CLI
+  url: cli/baz-technologies-cli.yml
+- type: Packages
+  url: packages/baz-technologies-packages.yml
+- type: LLMsTxt
+  url: llms/baz-technologies-llms.txt
+- type: AgentSkill
+  url: skills/_index.yml
+- type: TrustCenter
+  url: security/baz-technologies-trust-center.yml
+- type: Compliance
+  url: https://baz.ai/docs/account/security-privacy-and-compliance
+- type: VulnerabilityDisclosure
+  url: security/baz-technologies-vulnerability-disclosure.yml
+- type: Security
+  url: https://baz.ai/docs/account/security-privacy-and-compliance
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

@@ -1,0 +1,30 @@
+generated: '2026-07-18'
+method: searched
+source: https://baz.ai/docs/capabilities/cli
+name: Baz CLI
+binary: baz
+package: "@baz-scm/cli"
+repository: https://github.com/baz-scm/baz-cli
+install:
+- method: npm
+  command: npm install -g @baz-scm/cli
+description: >-
+  Command-line tool for AI-assisted manual code review and pull-request management.
+  Invoking `baz` launches an interactive review interface rather than exposing
+  traditional flag-driven subcommands.
+modes:
+- name: baz-mode
+  invoke: baz
+  description: >-
+    Connects the CLI to your Baz account and repository context; walkthroughs are aware
+    of linked tickets and specifications and include requirement verification. Requires
+    authentication to Baz services.
+- name: token-mode
+  invoke: GH_TOKEN=<github_pat> ANTHROPIC_TOKEN=<anthropic_key> baz
+  description: >-
+    Runs independently of Baz services using a GitHub PAT and an Anthropic key; supports
+    walkthrough reviews and commenting but not Baz-side requirement verification.
+notes: >-
+  Mode selection happens at runtime based on how the CLI is invoked (with or without
+  tokens), not via explicit configuration flags. The docs do not publish an enumerated
+  subcommand tree, so none is asserted here.
