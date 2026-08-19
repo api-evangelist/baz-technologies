@@ -6,16 +6,14 @@ server:
   name: baz
   transport: http
   url: https://baz.ai/mcp
-description: >-
-  Baz exposes a hosted, remote MCP server that delivers context-aware, org-configured
-  code reviews directly inside any MCP-enabled IDE, CLI, or agent (Cursor, Claude Code /
-  Desktop, VS Code). Review principles, coding standards, and conventions are managed
-  centrally at baz.co and enforced through the MCP surface.
+description: Baz exposes a hosted, remote MCP server that delivers context-aware, org-configured code
+  reviews directly inside any MCP-enabled IDE, CLI, or agent (Cursor, Claude Code / Desktop, VS Code).
+  Review principles, coding standards, and conventions are managed centrally at baz.co and enforced through
+  the MCP surface.
 auth:
   scheme: oauth
-  notes: >-
-    Interactive OAuth on first connect; credentials cached locally under ~/.mcp-auth
-    (clear this directory to reset the connection). No static API key documented.
+  notes: Interactive OAuth on first connect; credentials cached locally under ~/.mcp-auth (clear this
+    directory to reset the connection). No static API key documented.
 client_config_example:
   mcp:
     servers:
@@ -23,8 +21,15 @@ client_config_example:
         type: http
         url: https://baz.ai/mcp
 tools:
-  note: >-
-    The public docs advertise the MCP server and its configuration but do not enumerate
-    individual tool names/signatures; tools are exposed dynamically ("Baz's tool
-    signature — parameters, description, etc."). No verbatim tool list was published to
-    capture, so none are asserted here (no fabrication).
+  note: The public docs advertise the MCP server and its configuration but do not enumerate individual
+    tool names/signatures; tools are exposed dynamically ("Baz's tool signature — parameters, description,
+    etc."). No verbatim tool list was published to capture, so none are asserted here (no fabrication).
+deployment:
+  mode: none
+  endpoint: https://baz.ai/mcp
+  verified: probed
+  probe: dead
+  note: the endpoint this manifest claimed did not answer; recorded as none rather than deleted so the
+    claim stays auditable
+  checked: '2026-08-12'
+  source: catalog MCP census
